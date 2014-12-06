@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <solid android:color="@color/time_range_marker_button_background_default"/>
+    <stroke android:color="@color/rectangle_stroke" android:width="3dp">
+    </stroke>
+</shape>

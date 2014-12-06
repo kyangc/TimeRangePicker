@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="time_indicator_line">#c3c3c3</color>
+    <color name="time_indicator_text">#a9a9a9</color>
+    <color name="time_marker_button_background">#f9777a</color>
+    <color name="rectangle_background_default">#804e92df</color>
+    <color name="rectangle_background_pressed">#994e92df</color>
+    <color name="rectangle_stroke">#97bfec</color>
+    <color name="rectangle_text">#ffffff</color>
+    <color name="time_range_marker_button_background_default">#ffffff</color>
+    <color name="time_range_marker_button_background_pressed">#f9777a</color>
+</resources>

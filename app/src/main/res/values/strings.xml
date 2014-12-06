@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DragButton</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="time_row_text_0">0</string>
+    <string name="time_row_text_1">1</string>
+    <string name="time_row_text_2">2</string>
+    <string name="time_row_text_3">3</string>
+    <string name="time_row_text_4">4</string>
+    <string name="time_row_text_5">5</string>
+    <string name="time_row_text_6">6</string>
+    <string name="time_row_text_7">7</string>
+    <string name="time_row_text_8">8</string>
+    <string name="time_row_text_9">9</string>
+    <string name="time_row_text_10">10</string>
+    <string name="time_row_text_11">11</string>
+    <string name="time_row_text_12">12</string>
+    <string name="time_row_text_13">13</string>
+    <string name="time_row_text_14">14</string>
+    <string name="time_row_text_15">15</string>
+    <string name="time_row_text_16">16</string>
+    <string name="time_row_text_17">17</string>
+    <string name="time_row_text_18">18</string>
+    <string name="time_row_text_19">19</string>
+    <string name="time_row_text_20">20</string>
+    <string name="time_row_text_21">21</string>
+    <string name="time_row_text_22">22</string>
+    <string name="time_row_text_23">23</string>
+    <string name="time_row_text_24">24</string>
+</resources>

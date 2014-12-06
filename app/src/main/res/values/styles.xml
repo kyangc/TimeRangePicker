@@ -1,0 +1,96 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--Time indicator normal text style-->
+    <style name="TimeIndicatorText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">@integer/time_row_text_weight</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">@dimen/time_text_size</item>
+        <item name="android:textColor">@color/time_indicator_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--Top indicator text-->
+    <style name="TimeIndicatorText.Top">
+        <item name="android:gravity">top|center_horizontal</item>
+    </style>
+    <!--Bottom indicator text-->
+    <style name="TimeIndicatorText.Bottom">
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <!--Time indicator normal line style-->
+    <style name="TimeIndicatorLine">
+        <item name="android:width">0dp</item>
+        <item name="android:layout_weight">@integer/time_row_line_weight</item>
+        <item name="android:height">@dimen/time_row_line_height</item>
+        <item name="android:background">@color/time_indicator_line</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--Top line-->
+    <style name="TimeIndicatorLine.Top">
+        <item name="android:layout_gravity">top</item>
+        <!--Half of the drag button-->
+        <item name="android:layout_marginTop">@dimen/background_container_margin_top</item>
+    </style>
+    <!--Bottom line-->
+    <style name="TimeIndicatorLine.Bottom">
+        <item name="android:layout_gravity">bottom</item>
+        <!--Half of the drag button-->
+        <item name="android:layout_marginBottom">@dimen/background_container_margin_bottom</item>
+    </style>
+
+    <!--Time range text-->
+    <style name="TimeRangeText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/rectangle_text</item>
+        <item name="android:textSize">@dimen/time_range_text_time</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <!--Start-->
+    <style name="TimeRangeText.Start">
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <!--Separate-->
+    <style name="TimeRangeText.Sep">
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+    <!--End-->
+    <style name="TimeRangeText.End">
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
+    <!--Last-->
+    <style name="TimeRangeText.Last">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">@dimen/time_range_text_last</item>
+    </style>
+
+    <!--Drag button-->
+    <style name="DragButton">
+        <item name="android:layout_width">@dimen/time_picker_button_width</item>
+        <item name="android:layout_height">@dimen/time_picker_button_width</item>
+        <item name="android:background">@drawable/drag_marker</item>
+    </style>
+
+    <!--Time marker-->
+    <style name="TimeMarker">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:src">@drawable/time_marker</item>
+    </style>
+
+    <!--Time marker line-->
+    <style name="TimeMarkerLine">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/time_marker_button_background</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

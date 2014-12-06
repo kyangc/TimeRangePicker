@@ -1,0 +1,381 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.kyangc.dragbutton.app.TimeRangePickerFragment">
+    <com.kyangc.dragbutton.app.LockableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:id="@+id/sv_container">
+        <FrameLayout android:layout_width="fill_parent"
+                     android:layout_height="wrap_content">
+            <!--Background-->
+            <LinearLayout android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height_Top"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText.Top"
+                              android:text="@string/time_row_text_0"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine.Top">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_1"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_2"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_3"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_4"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_5"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_6"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_7"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_8"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_9"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_10"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_11"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_12"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_13"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_14"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_15"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_16"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_17"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_18"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_19"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_20"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_21"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_22"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent"
+                              android:layout_height="@dimen/time_row_height"
+                              android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText"
+                              android:text="@string/time_row_text_23"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine">
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/ll_last_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/time_row_height_Bottom"
+                        android:orientation="horizontal">
+                    <TextView style="@style/TimeIndicatorText.Bottom"
+                              android:text="@string/time_row_text_24"/>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="@integer/time_row_line_weight"
+                                    android:layout_height="@dimen/time_row_line_height"
+                                    style="@style/TimeIndicatorLine.Bottom">
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Time marker-->
+            <LinearLayout
+                    android:id="@+id/ll_time_marker"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:orientation="horizontal">
+                <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="@integer/time_row_text_weight"
+                        android:layout_width="0dp"
+                        android:layout_height="10dp">
+
+                    <ImageView
+                            android:layout_width="@dimen/time_marker_width"
+                            android:layout_height="@dimen/time_marker_width"
+                            style="@style/TimeMarker"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_width="0dp"
+                                android:layout_weight="@integer/time_row_line_weight"
+                                android:layout_height="@dimen/time_marker_line_height"
+                                style="@style/TimeMarkerLine"></RelativeLayout>
+            </LinearLayout>
+
+            <!--Time range rectangle-->
+            <RelativeLayout
+                    android:id="@+id/rl_rectangle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/time_range_rectangle">
+                <TextView
+                        android:id="@+id/tv_start_time"
+                        android:text="12:00"
+                        style="@style/TimeRangeText.Start"/>
+                <TextView
+                        android:id="@+id/tv_separate"
+                        android:text="~"
+                        android:layout_toRightOf="@id/tv_start_time"
+                        style="@style/TimeRangeText.Sep"/>
+                <TextView
+                        android:id="@+id/tv_end_time"
+                        android:text="13:00"
+                        android:layout_toRightOf="@id/tv_separate"
+                        style="@style/TimeRangeText.End"/>
+                <TextView
+                        android:id="@+id/tv_last_time"
+                        android:text="1小时"
+                        android:layout_below="@id/tv_start_time"
+                        style="@style/TimeRangeText.Last"/>
+            </RelativeLayout>
+
+            <!--Marker button top-->
+            <Button android:id="@+id/btn_mark_top" style="@style/DragButton"/>
+
+            <!--Marker button bottom-->
+            <Button android:id="@+id/btn_mark_bottom" style="@style/DragButton"/>
+
+        </FrameLayout>
+    </com.kyangc.dragbutton.app.LockableScrollView>
+</FrameLayout>
